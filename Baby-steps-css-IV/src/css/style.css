@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #030811; /* Dark navy background matching the original image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+}
+
+.color-square {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.color-square:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.c1-r1 { background-color: #7b96ff; }
+.c1-r2 { background-color: #5171ff; }
+.c1-r3 { background-color: #404ee6; }
+.c1-r4 { background-color: #3642c7; }
+.c1-r5 { background-color: #323da8; }
+.c1-r6 { background-color: #2e3582; }
+
+.c2-r1 { background-color: #a491f8; }
+.c2-r2 { background-color: #8463f2; }
+.c2-r3 { background-color: #703ce6; }
+.c2-r4 { background-color: #6029cf; }
+.c2-r5 { background-color: #5021aa; }
+.c2-r6 { background-color: #411985; }
+
+.c3-r1 { background-color: #c980f7; }
+.c3-r2 { background-color: #af4df5; }
+.c3-r3 { background-color: #9524e4; }
+.c3-r4 { background-color: #7b16c2; }
+.c3-r5 { background-color: #6511a1; }
+.c3-r6 { background-color: #510c7d; }
+
+.c4-r1 { background-color: #ec75f5; }
+.c4-r2 { background-color: #df3af0; }
+.c4-r3 { background-color: #c213d4; }
+.c4-r4 { background-color: #9d0cb0; }
+.c4-r5 { background-color: #7f0a8d; }
+.c4-r6 { background-color: #650770; }
+
+.c5-r1 { background-color: #f86fba; }
+.c5-r2 { background-color: #f23a9c; }
+.c5-r3 { background-color: #d8187f; }
+.c5-r4 { background-color: #b31065; }
+.c5-r5 { background-color: #8f0e52; }
+.c5-r6 { background-color: #700c41; }
+
+.c6-r1 { background-color: #ff727d; }
+.c6-r2 { background-color: #f84152; }
+.c6-r3 { background-color: #de1d35; }
+.c6-r4 { background-color: #b61328; }
+.c6-r5 { background-color: #911021; }
+.c6-r6 { background-color: #700c19; }
+
+@media (max-width: 480px) {
+    .color-grid {
+        gap: 10px;
+        padding: 10px;
+    }
+    .color-square {
+        border-radius: 8px;
+    }
+}
